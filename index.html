@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>רשימת משימות</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>רשימת משימות</h1>
+        
+        <form id="todoForm">
+            <input type="text" id="todoInput" placeholder="הכנס משימה חדשה" required>
+            <input type="submit" value="הוסף משימה">
+        </form>
+
+        <button id="filterButton">סנן לפי משימות שהושלמו</button>
+
+        <table id="todoTable">
+            <thead>
+                <tr>
+                    <th>מזהה</th>
+                    <th>משימה</th>
+                    <th>הושלם</th>
+                    <th>פעולות</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <div id="editPopup" class="popup">
+            <div class="popup-content">
+                <h2>עריכת משימה</h2>
+                <input type="text" id="editInput">
+                <div class="popup-buttons">
+                    <button id="saveEdit">שמור</button>
+                    <button id="cancelEdit">ביטול</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
